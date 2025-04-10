@@ -1,0 +1,7 @@
+echo "# Codestudy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LeHaiDang1810/Codestudy.git
+git push -u origin main
