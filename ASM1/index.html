@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trường Tiểu Học Phạm Hồng Thái</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome để có icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="home">
+    <div class="logo">
+      <img src="LogoTruong.jpg" alt="Logo trường">
+    </div>
+    <h1>Trường Tiểu Học Phạm Hồng Thái</h1>
+    <nav>
+      <ul class="main-menu">
+        <li><a href="#home" title="Trang chủ">Trang chủ</a></li>
+        <li><a href="#intro" title="Giới thiệu">Giới thiệu</a></li>
+        <li class="has-submenu">
+          <a href="#news" title="Tin tức">Tin tức <i class="fas fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#news-event">Sự kiện</a></li>
+            <li><a href="#news-competition">Cuộc thi</a></li>
+            <li><a href="#news-activity">Hoạt động</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" title="Liên hệ">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="overlay">
+      <h2>Chào mừng đến với Trường Tiểu Học Phạm Hồng Thái</h2>
+    </div>
+  </section>
+
+  <!-- Nội dung chính -->
+  <main class="container">
+    <!-- Giới thiệu -->
+    <section class="intro" id="intro">
+      <h3>Giới thiệu về trường</h3>
+      <div class="intro-content">
+        <img src="anhTruong2.png" alt="Ảnh trường" class="intro-img">
+        <p>
+          Trường Tiểu Học Phạm Hồng Thái là một trong những trường hàng đầu với chương trình giảng dạy hiện đại, 
+          đội ngũ giáo viên tận tâm và môi trường học tập lý tưởng. Chúng tôi luôn tạo điều kiện để học sinh phát triển 
+          toàn diện về kiến thức, kỹ năng và đạo đức.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tin tức -->
+    <section class="news" id="news">
+      <h3>Tin tức mới nhất</h3>
+
+      <!-- Mục Sự kiện -->
+      <section class="news-category" id="news-event">
+        <h4>Sự kiện</h4>
+        <div class="news-container">
+          <div class="news-item">
+            <img src="Khaigiang.jpg" alt="Sự kiện 1">
+            <p>Lễ khai giảng năm học mới sẽ diễn ra vào ngày 5/9...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="news-item">
+            <img src="Tongket.jpg" alt="Sự kiện 2">
+            <p>Lễ tổng kết năm học với nhiều tiết mục ấn tượng...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mục Cuộc thi -->
+      <section class="news-category" id="news-competition">
+        <h4>Cuộc thi</h4>
+        <div class="news-container">
+          <div class="news-item">
+            <img src="HSGioi.jpg" alt="Cuộc thi 1">
+            <p>Đội tuyển học sinh giỏi trường đạt thành tích xuất sắc...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="news-item">
+            <img src="NgoaiKhoa.jpg" alt="Cuộc thi 2">
+            <p>Các cuộc thi ngoại khóa tạo sân chơi học tập sáng tạo...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mục Hoạt động -->
+      <section class="news-category" id="news-activity">
+        <h4>Hoạt động</h4>
+        <div class="news-container">
+          <div class="news-item">
+            <img src="HĐ1.jpg" alt="Hoạt động 1">
+            <p>Trang bị kiến thức phòng cháy chữa cháy cho các em học sinh...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+          <div class="news-item">
+            <img src="HĐ2.jpg" alt="Hoạt động 2">
+            <p>Các hoạt động ngoại khóa giúp học sinh phát triển kỹ năng sống...</p>
+            <a href="#">Xem thêm</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Liên hệ -->
+    <section class="contact" id="contact">
+      <h3>Liên hệ</h3>
+      <p>Email: lienhe@thptphamhongthai.edu.vn</p>
+      <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
+      <p>Số điện thoại: (08) 1234 5678</p>
+    </section>
+  </main>
+
+  <!-- Nút cuộn lên đầu trang -->
+  <button class="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Trường Tiểu Học Phạm Hồng Thái - Lê Hải Đăng.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

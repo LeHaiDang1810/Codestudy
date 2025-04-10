@@ -1,0 +1,184 @@
+/* css/content-styles.css */
+.content-section {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Bài 1: Trang tin tức */
+/* Phần toàn bộ cụm tin tức (bao gồm hình ảnh và văn bản) */
+/* Cấu trúc chung của các tin tức */
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các cụm tin */
+}
+
+/* Mỗi tin tức là một khối độc lập */
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Hiệu ứng hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Hiệu ứng khi hover vào cụm tin tức */
+.news-item:hover {
+    transform: scale(1.05); /* Phóng to cụm */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng rõ hơn */
+}
+
+/* Hình ảnh trong từng cụm tin tức */
+.news-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease; /* Hiệu ứng riêng cho hình ảnh */
+}
+
+.news-item:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh */
+}
+
+/* Văn bản trong cụm tin tức */
+.news-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007bff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.news-item:hover .news-text h3 {
+    color: #ff6600; /* Đổi màu khi hover */
+    transform: translateX(5px); /* Dịch nhẹ sang phải */
+}
+
+.news-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.news-item:hover .news-text p {
+    color: #007bff; /* Đổi màu chữ */
+    transform: translateX(3px); /* Dịch nhẹ sang phải */
+}
+
+/* Phần chung */
+.content-section {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Layout tổng thể */
+/* Bố cục chung */
+.media-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa video và ảnh */
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Video chính */
+.main-video {
+    flex: 2; /* Video chiếm nhiều không gian hơn */
+}
+
+.main-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Giữ tỷ lệ chuẩn 16:9 */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-video iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ảnh đại diện */
+.thumbnail-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1; /* Ảnh chiếm không gian nhỏ hơn */
+    align-items: center; /* Căn giữa ảnh trong cột */
+}
+
+.thumbnail-column img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail-column img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .media-layout {
+        flex-direction: column; /* Chuyển sang dạng cột trên màn hình nhỏ */
+    }
+
+    .main-video iframe {
+        max-width: 100%;
+    }
+
+    .thumbnail-column {
+        flex-direction: row; /* Ảnh đại diện nằm ngang */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .thumbnail-column img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail-column img {
+        width: 80px;
+        height: 80px;
+    }
+}

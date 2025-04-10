@@ -1,0 +1,64 @@
+ @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        body {
+            font-family: 'VT323', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: #1e1e2f;
+            padding: 40px;
+            border: 6px solid #4e54c8;
+            width: 450px;
+            box-shadow: 8px 8px 0px #4e54c8;
+        }
+        h2 {
+            color: #8e9eab;
+            text-shadow: 2px 2px #1f4068;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 3px solid #4e54c8;
+            background: #1b1b2f;
+            color: white;
+            font-size: 18px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #00adb5;
+        }
+        button {
+            background: #4e54c8;
+            color: white;
+            padding: 12px;
+            border: 3px solid #00adb5;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+            width: 100%;
+        }
+        button:hover {
+            background: #00adb5;
+            border-color: #4e54c8;
+        }
+        .error {
+            display: none;
+            color: red;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .success-container {
+            display: none;
+            text-align: center;
+            background: #1e1e2f;
+            padding: 40px;
+            border: 6px solid #4e54c8;
+            width: 450px;
+            box-shadow: 8px 8px 0px #4e54c8;
+        }

@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-size: 72px;
+    font-variant: small-caps;
+    color: #0077b6; /* Màu xanh nước biển */
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px gold; /* Màu bóng vàng từ tâm */
+}

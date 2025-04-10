@@ -1,0 +1,65 @@
+/* css/content-styles.css */
+.content-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-box {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Style cho video responsive (Bài 1) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style cho Google Map (Bài 2) */
+.content-box iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .content-box {
+        padding: 15px;
+    }
+
+    .content-box h2 {
+        font-size: 20px;
+    }
+}

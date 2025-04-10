@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    font-weight: bold;
+}
+.doan1 {
+    color: red;
+    font-style: italic;
+}
+.doan2 {
+    color: blue;
+    font-style: italic;
+}
+.doan3 {
+    color: green;
+    font-style: italic;
+}
+strong {
+    color: brown;
+}

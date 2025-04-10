@@ -1,0 +1,97 @@
+/* Cấu trúc tổng thể */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.slice {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: #343a40;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: #00d4ff;
+}
+
+/* Table Section */
+.table-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    text-align: center;
+}
+
+/* Switch Buttons */
+.table-switch button {
+    padding: 10px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-switch button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,16 @@
+<!-- components/login-form.html -->
+<div class="form-box login" id="login-form">
+    <h2>Đăng Nhập</h2>
+    <form>
+        <div class="input-group">
+            <label for="login-username">Tên đăng nhập</label>
+            <input type="text" id="login-username" name="username" placeholder="Nhập tên đăng nhập" required>
+        </div>
+        <div class="input-group">
+            <label for="login-password">Mật khẩu</label>
+            <input type="password" id="login-password" name="password" placeholder="Nhập mật khẩu" required>
+        </div>
+        <button type="submit">Đăng Nhập</button>
+        <p class="switch">Chưa có tài khoản? <a href="#" onclick="switchForm('register')">Đăng ký ngay</a></p>
+    </form>
+</div>

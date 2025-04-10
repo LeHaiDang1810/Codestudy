@@ -1,0 +1,53 @@
+<!-- form2.html -->
+<div class="form-box" id="form2">
+    <h2>Bài 2: Đăng Ký Thông Tin</h2>
+    <form>
+        <div class="input-group">
+            <label for="fullname2">Họ và tên</label>
+            <input type="text" id="fullname2" name="fullname" placeholder="Nhập họ và tên" required>
+        </div>
+        <fieldset>
+            <legend>Giới tính</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Nam</label>
+                <label><input type="radio" name="gender" value="female"> Nữ</label>
+            </div>
+        </fieldset>
+        <div class="input-group">
+            <label for="birthdate">Ngày sinh</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div class="input-group">
+            <label for="score">Điểm</label>
+            <input type="number" id="score" name="score" min="0" max="10" step="0.25" required>
+        </div>
+        <fieldset>
+            <legend>Sở thích</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobbies" value="music"> Nghe nhạc</label>
+                <label><input type="checkbox" name="hobbies" value="travel"> Du lịch</label>
+                <label><input type="checkbox" name="hobbies" value="sports"> Thể thao</label>
+                <label><input type="checkbox" name="hobbies" value="reading"> Đọc sách</label>
+            </div>
+        </fieldset>
+        <div class="input-group">
+            <label for="occupation">Nghe nghề nghiệp</label>
+            <input type="text" id="occupation" name="occupation" list="occupation-list" placeholder="Chọn nghề nghiệp">
+            <datalist id="occupation-list">
+                <option value="Số thích">
+                <option value="Thể thao">
+                <option value="Du lịch">
+                <option value="Âm nhạc">
+                <option value="Âm thầm">
+            </datalist>
+        </div>
+        <div class="input-group">
+            <label for="notes2">Ghi chú</label>
+            <textarea id="notes2" name="notes" placeholder="Ghi chú của bạn"></textarea>
+        </div>
+        <div class="button-group">
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,117 @@
+/* css/form-styles.css */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #007bff;
+}
+
+.input-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, #00d4ff, #007bff);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    transform: scale(1.05);
+}
+
+.switch {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.switch a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .form-box {
+        padding: 15px;
+    }
+
+    .form-box h2 {
+        font-size: 20px;
+    }
+}

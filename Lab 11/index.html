@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11: Bảng và Đa Phương Tiện</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lab 11: Bảng và Đa Phương Tiện</h1>
+    </header>
+
+    <!-- Slice -->
+    <div class="slice">
+        <p>Slice: Đây là phần slice trải dài toàn bộ chiều rộng</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Bảng</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li><a href="#">Trợ giúp</a></li>
+            </ul>
+        </aside>
+
+        <!-- Bảng Section -->
+        <section class="table-section">
+            <div class="container">
+                <!-- Vùng hiển thị bảng -->
+                <div id="table-container"></div>
+                <!-- Nút chuyển đổi bảng -->
+                <div class="table-switch">
+                    <button onclick="switchTable('table1')">Bài 1</button>
+                    <button onclick="switchTable('table2')">Bài 2</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Thiết kế bởi: Lê Hải Đăng</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

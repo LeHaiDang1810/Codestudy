@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <link rel="stylesheet" href="Webtraining2.css">
+</head>
+<body>
+    <div id="form-container" class="container">
+        <h2>Đăng Ký</h2>
+        <form onsubmit="validateForm(event)">
+            <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu" required minlength="6">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Xác nhận mật khẩu" required>
+            <span id="error_msg" class="error"></span>
+            <select id="gender" name="gender">
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+                <option value="other">Khác</option>
+            </select>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Chọn quốc gia</option>
+                <option value="vn">Việt Nam</option>
+                <option value="us">Mỹ</option>
+                <option value="jp">Nhật Bản</option>
+                <option value="kr">Hàn Quốc</option>
+                <option value="cn">Trung Quốc</option>
+                <option value="uk">Anh</option>
+                <option value="fr">Pháp</option>
+            </select>
+            <label class="checkbox-label">
+                <input type="checkbox" name="agree" required>
+                Tôi đồng ý với điều khoản sử dụng
+            </label>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+    <div id="success-container" class="success-container">
+        <h2>✔ Bạn đã đăng ký thành công!</h2>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+            const errorMsg = document.getElementById("error_msg");
+            const formContainer = document.getElementById("form-container");
+            const successContainer = document.getElementById("success-container");
+
+            if (password !== confirmPassword) {
+                errorMsg.style.display = "block";
+                errorMsg.textContent = "Mật khẩu và xác nhận mật khẩu không khớp!";
+                return;
+            }
+
+            errorMsg.style.display = "none";
+            formContainer.style.display = "none";
+            successContainer.style.display = "block";
+        }
+    </script>
+</body>
+</html>

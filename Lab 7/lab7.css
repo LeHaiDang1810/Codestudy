@@ -1,0 +1,114 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Bài 1: Menu đứng */
+.vmenu {
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+    width: 250px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.vmenu a {
+    background: url('bullet_hover.gif') no-repeat 10px center;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+    transition: all 0.3s ease;
+}
+
+.vmenu a:hover {
+    background: url('bullet.png') no-repeat 10px center;
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+/* Bài 2: Sản phẩm */
+.container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.prod {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prod:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.prod > .name {
+    font-variant: small-caps;
+    color: orangered;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.prod > .image {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.prod > .price {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-family: Impact, sans-serif;
+    font-size: 25px;
+    color: orange;
+}
+
+.prod > .icons {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.prod > .icons img {
+    width: 25px;
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+}
+
+.prod > .icons img:hover {
+    transform: scale(1.2);
+}
+
+.prod > .new-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}

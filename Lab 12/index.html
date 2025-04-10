@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12: Đa Phương Tiện</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/content-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lab 12: Đa Phương Tiện</h1>
+    </header>
+
+    <!-- Slice -->
+    <div class="slice">
+        <p>Slice: Đây là phần slice trải dài toàn bộ chiều rộng</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Âm nhạc</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li><a href="#">Trợ giúp</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <!-- Vùng hiển thị nội dung -->
+                <div id="content-container"></div>
+                <!-- Nút chuyển đổi giữa các bài -->
+                <div class="content-switch">
+                    <button onclick="switchContent('news')">Bài 1: Tin Tức</button>
+                    <button onclick="switchContent('media')">Bài 2: Phương Tiện</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Thiết kế bởi: Lê Hải Đăng</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
